@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Blackjack JS</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <h1>Blackjack Challenge</h1>
+            <h3 id="game-status">Let's Play!</h3>
+        </div>
+        <div class="game-board">
+            <div class="game-area">
+                <div class="player-area">
+                    <h3>You : <span id="player-score">0</span></h3>
+                </div>
+                <div class="dealer-area">
+                    <h3>Dealer : <span id="dealer-score">0</span></h3>
+                </div>
+            </div>
+            <div class="game-controls">
+                <div class="buttons-group">
+                    <button class="primary">Hit</button>
+                    <button class="warning">Stand</button>
+                    <button class="danger">Deal</button>
+                </div>
+            </div>
+        </div>
+        <div class="game-score">
+            <table class="score-history">
+                <thead>
+                    <td>Wins</td>
+                    <td>Losses</td>
+                    <td>Draws</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="score-wins">0</span></td>
+                        <td><span id="score-losses">0</span></td>
+                        <td><span id="score-draws">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>

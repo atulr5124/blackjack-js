@@ -1,0 +1,90 @@
+.container {
+    margin-top: 16px;
+}
+
+.header {
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.game-board {
+    background-image: url('./images/blackjack_background.jpg');
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-area {
+    display: flex;
+    margin: 8px;
+    border: 1px solid black;
+    height: 80%;
+}
+
+.player-area, .dealer-area {
+    color: white;
+    width: 50%;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.game-controls {
+    border: 1px solid black;
+    margin-top: 8px;
+    padding: 8px 0 8px 0;
+}
+
+.buttons-group {
+    border: 1px solid black;
+    padding: 8px;
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons-group button {
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.game-score {
+    border: 1px solid black;
+    padding: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 8px;
+}
+
+tr > td {
+    text-align: center;
+}
+
+.buttons-group .primary {
+    background-color: #0275d8 ;
+    color: white;
+}
+
+.buttons-group .warning {
+    background-color: #f0ad4e;
+}
+
+.buttons-group .danger {
+    background-color: #d9534f;
+    color: white;
+}
+
+
